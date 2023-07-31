@@ -27,9 +27,11 @@ const power = function (base, power) {
 };
 
 const factorial = function (num) {
+  if (num == 0) return 1;
+
   let sum = 1;
-  for (i = num; i > 0; i--) {
-    sum *= i;
+  for (i = 0; i < num; i++) {
+    sum *= num - i;
   }
   return sum;
 };
