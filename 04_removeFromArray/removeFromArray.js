@@ -1,6 +1,11 @@
-const removeFromArray = function (arr, ...args) {
-  //Filters items that DONT include args
-  return arr.filter((element) => !args.includes(element));
+const removeFromArray = function (array, ...args) {
+  let newArray = [];
+  array.forEach((num) => {
+    if (!args.includes(num)) {
+      newArray.push(num);
+    }
+  });
+  return newArray;
 };
 
 // Do not edit below this line

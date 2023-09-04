@@ -6,34 +6,32 @@ const subtract = function (num1, num2) {
   return num1 - num2;
 };
 
-const sum = function (arr) {
-  let sum = 0;
-  for (i = 0; i < arr.length; i++) {
-    sum += arr[i];
+const sum = function (array) {
+  let total = 0;
+  for (i = 0; i < array.length; i++) {
+    total += array[i];
   }
-  return sum;
+  return total;
 };
 
-const multiply = function (arr) {
-  let sum = 1;
-  for (i = 0; i < arr.length; i++) {
-    sum *= arr[i];
+const multiply = function (array) {
+  let total = 1;
+  for (i = 0; i < array.length; i++) {
+    total *= array[i];
   }
-  return sum;
+  return total;
 };
 
-const power = function (base, power) {
-  return base ** power;
+const power = function (num, power) {
+  return num ** power;
 };
 
 const factorial = function (num) {
-  if (num == 0) return 1;
-
-  let sum = 1;
-  for (i = 0; i < num; i++) {
-    sum *= num - i;
+  let total = 1;
+  for (i = 1; i <= num; i++) {
+    total *= i;
   }
-  return sum;
+  return total;
 };
 
 // Do not edit below this line
